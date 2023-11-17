@@ -21,9 +21,16 @@ const myCoding = [
     }
 ]
 
-myCoding.forEach((elemObj) =>{
-    //console.log(elemObj);    
-    for (const key in elemObj) {
-        console.log("Key is: ", key, " And Value is: ", elemObj[key]);
-   }
+// myCoding.forEach((elemObj) =>{
+//     //console.log(elemObj);    
+//     for (const key in elemObj) {
+//         console.log("Key is: ", key, " And Value is: ", elemObj[key]);
+//    }
+// });
+
+const coding = ["js", "ruby"];
+const values = myCoding.forEach((item) =>{
+    return item;
 });
+
+console.log(coding);
