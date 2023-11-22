@@ -111,3 +111,29 @@ submitBtn.onclick = (e) => {
 
 
 '''
+
+##Project 5
+'''javascript
+
+const colorArray = ['blue', 'white', 'green', 'yellow'];
+let i = 0;
+
+const startPrinting = () => {
+  console.log('Printing has been started:');
+  document.body.style.backgroundColor = colorArray[i];
+  i++;
+  i = i % 4;
+};
+
+let startIntervalRef;
+document.getElementById('start').onclick = () => {
+  console.log('Start:');
+  startIntervalRef = setInterval(startPrinting, 1000);
+};
+
+document.getElementById('stop').onclick = () => {
+  clearInterval(startIntervalRef);
+};
+
+
+'''
